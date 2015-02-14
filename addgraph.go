@@ -8,7 +8,7 @@ import (
 )
 
 const (
-        ZabbixServer string = "http://zabbix-infra.dedale.tf1.fr/zabbix"
+        ZabbixServer string = "http://zabbix"
 )
 
 //permet de récupérer l'ID d'un screen grâce à son nom
