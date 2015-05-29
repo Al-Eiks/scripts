@@ -190,11 +190,11 @@ func objectRow(mailBody string) string {
 
 func sendMail(body string) {
         msg := gomail.NewMessage()
-        msg.SetHeader("From", "racktables@dedale.tf1.fr")
-        msg.SetHeader("To", "asantangeli@tf1.fr")
+        msg.SetHeader("From", "racktables@fr")
+        msg.SetHeader("To", "a.fr")
         msg.SetHeader("Subject", "RackTables Expirations Report")
         msg.SetBody("text/html", body)
-        mailer := gomail.NewMailer("prdinfmel501-adm.dedale.tf1.fr", "", "", 25)
+        mailer := gomail.NewMailer("serverMail", "", "", 25)
         if err := mailer.Send(msg); err != nil {
                 panic(err)
         }
